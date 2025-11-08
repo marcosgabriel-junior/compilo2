@@ -79,7 +79,7 @@ class MiniCompilador:
         self.limpar_btn = ttk.Button(button_container, text="Limpar Tudo", command=self.limpar_tudo, bootstyle="danger-outline", width=btn_width)
         self.limpar_btn.pack(side="left", padx=5)
 
-        paned_window = ttk.PanedWindow(root, orient=tk.HORIZONTAL)
+        paned_window = ttk.Panedwindow(root, orient=tk.HORIZONTAL)
         paned_window.pack(fill="both", expand=True, padx=10, pady=(0, 10))
 
         codigo_frame = ttk.Frame(paned_window, width=400, height=500, padding=5)
